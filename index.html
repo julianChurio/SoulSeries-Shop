@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoulSeries Shop</title>
+    <link rel="shortcut icon" href="./images/estusflask.webp" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="titular"></h1>
+        <button id="cambiarNombre" class="boton">Cambiar nombre</button>
+    </header>
+    <div id="login" class="create login content">
+        <form class="form">
+            <label for="username">Como es su nombre?</label>
+            <input id="username" type="text" placeholder="Ingrese su nombre">
+            <input type="submit" value="Registrar nombre" id="submit">
+        </form>
+    </div>
+    <main>
+        <div id="main" class="">
+            
+  <div id="imagenes">
+    <img src="images/demonssoulswallpaper.jpg" alt="demon's souls" class="primeraImagen">
+    <img src="images/darksouls.jpg" alt="dark souls" class="segundaImagen">
+    <img src="images/darksouls2sotfs.jpg" alt="dark souls 2" class="terceraImagen">
+    <img src="images/darksouls3.jpg" alt="dark souls 3" class="cuartaFoto">
+    <img src="images/bloodborne.jpg" alt="Bloodborne" class="quintaFoto">
+</div>
+<div id="botones">
+    <div id="primerBoton">
+        <button onclick="restarJuego('cart', precios[0], 0)" class="botonRestarDS botonRestarGeneral">-</button>
+        <h3 id="header(0)">0</h3>
+        <button onclick="sumarJuego('cart', precios[0], 0)" class="botonSumarDS botonSumarGeneral">+</button>
+    </div>
+    <div id="segundoBoton">
+        <button onclick="restarJuego('cart', precios[1], 1)"
+            class="botonRestarDS1 botonRestarGeneral">-</button>
+        <h3 id="header(1)">0</h3>
+        <button onclick="sumarJuego('cart', precios[1], 1)" class="botonSumarDS1 botonSumarGeneral">+</button>
+    </div>
+    <div id="tercerBoton">
+        <button onclick="restarJuego('cart', precios[2], 2)"
+            class="botonRestarDS2 botonRestarGeneral">-</button>
+        <h3 id="header(2)">0</h3>
+        <button onclick="sumarJuego('cart', precios[2], 2)" class="botonSumarDS2 botonSumarGeneral">+</button>
+    </div>
+    <div id="cuartoBoton">
+        <button onclick="restarJuego('cart', precios[3], 3)"
+            class="botonRestarDS3 botonRestarGeneral">-</button>
+        <h3 id="header(3)">0</h3>
+        <button onclick="sumarJuego('cart', precios[3], 3)" class="botonSumarDS3 botonSumarGeneral">+</button>
+    </div>
+    <div id="quintoBoton">
+        <button onclick="restarJuego('cart', precios[4], 4)" class="botonRestarBB botonRestarGeneral">-</button>
+        <h3 id="header(4)">0</h3>
+        <button onclick="sumarJuego('cart', precios[4], 4)" class="botonSumarBB botonSumarGeneral">+</button>
+    </div>
+</div>
+<div id="textos">
+    <div id="primerTexto" class="primerTexto">
+        <h2>Demon's souls</h2>
+        <p>Precio: ARS$11999</p>
+    </div>
+    <div id="segundoTexto" class="segundoTexto">
+        <h2>Dark Souls</h2>
+        <p>Precio: ARS$1199</p>
+    </div>
+    <div id="tercerTexto" class="tercerTexto">
+        <h2>Dark Souls 2</h2>
+        <p>Precio: ARS$1999</p>
+    </div>
+    <div id="cuartoTexto" class="cuartoTexto">
+        <h2>Dark Souls 3</h2>
+        <p>Precio: ARS$2999</p>
+    </div>
+    <div id="quintoTexto" class="quintoTexto">
+        <h2>Bloodborne</h2>
+        <p>Precio: ARS$3299</p>
+    </div>
+</div>
+<h2 id="precioCarrito"></h2>
+        </div>
+        <div id="modal">
+            <!-- Trigger/Open The Modal -->
+            <button id="myBtn" class="boton compra">Finalizar Compra</button>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <form class="form create content login">
+                        <label for="Email">Email</label>
+                        <input id="Email" type="email" placeholder="Ingrese su email" required>
+                        <label for="plataforma">Steam/PSN</label>
+                        <input id="plataforma" type="text" required
+                            placeholder="https://steamcommunity.com/profiles/76561198074910113">
+                    </form>
+                    <button id="validar" onclick="compraTerminada()" class="botonFuncion">Validar</button>
+
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <script src="./js/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.19/dist/sweetalert2.all.min.js"></script>
+</body>
+
+</html>

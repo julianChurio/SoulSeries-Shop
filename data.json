@@ -1,0 +1,32 @@
+[
+    {
+      "id": 0,
+      "nombre": "Demon's Souls",
+      "lanzamiento": "6 de Octubre de 2009",
+      "precio": 11999
+    },
+    {
+      "id": 1,
+      "nombre": "Dark Souls",
+      "lanzamiento": "4 de Octubre de 2011",
+      "precio": 1199
+    },
+    {
+      "id": 2,
+      "nombre": "Dark Souls 2",
+      "lanzamiento": "11 de Marzo de 2014",
+      "precio": 1999
+    },
+    {
+      "id": 3,
+      "nombre": "Dark Souls 3",
+      "lanzamiento": "12 de Abril de 2016",
+      "precio": 2999
+    },
+    {
+      "id": 4,
+      "nombre": "Bloodborne",
+      "lanzamiento": "24 de Marzo de 2015",
+      "precio": 3299
+    }
+  ]

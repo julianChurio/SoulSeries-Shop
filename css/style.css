@@ -1,0 +1,427 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  color: whitesmoke;
+  background-image: linear-gradient(to bottom right, black, black, #d37150);
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.hiddenDos {
+  display: none;
+}
+
+header {
+  display: flex;
+}
+
+.boton {
+  margin-left: auto;
+  background-color: transparent;
+  color: white;
+  border: transparent;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 12px;
+}
+
+.compra {
+  text-decoration: none;
+  display: flex;
+  margin: 0 auto !important;
+}
+
+.compra a {
+  text-decoration: none;
+  color: white;
+  border: transparent;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.boton:hover:first-of-type {
+  background-color: white;
+  color: black !important;
+  transition: background-color 400ms ease-in-out;
+  transition: color 400ms ease-in-out;
+}
+
+.boton a:hover:last-of-type {
+  background-color: white;
+  color: black !important;
+  transition: background-color 400ms ease-in-out;
+  transition: color 400ms ease-in-out;
+}
+
+#precioCarrito {
+  font-size: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.botonRestarGeneral {
+  background-color: #ff000098;
+  border-color: #ff000098;
+  cursor: pointer;
+}
+
+.botonSumarGeneral {
+  background-color: #6fa821;
+  border-color: #6fa821;
+  cursor: pointer;
+}
+
+.botonTotal {
+  width: 25%;
+  border: 0px;
+  background-color: whitesmoke;
+}
+
+#imagenes {
+  display: grid;
+  grid-template-areas: "primeraImagen segundaImagen terceraImagen cuartaFoto quintaFoto";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 1rem;
+}
+
+#botones {
+  display: grid;
+  grid-template-areas: "primerBoton segundoBoton tercerBoton cuartoBoton quintoBoton";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 1rem;
+}
+
+#primerBoton {
+  display: grid;
+  grid-template-areas: "botonRestarDS1 botonNombreDS1 botonSumarDS1";
+}
+
+#segundoBoton {
+  display: grid;
+  grid-template-areas: "botonRestarDS2 botonNombreDS2 botonSumarDS2";
+}
+
+#tercerBoton {
+  display: grid;
+  grid-template-areas: "botonRestarDS3 botonNombreDS3 botonSumarDS3";
+}
+
+#cuartoBoton {
+  display: grid;
+  grid-template-areas: "botonRestarDS botonNombreDS botonSumarDS";
+}
+
+#quintoBoton {
+  display: grid;
+  grid-template-areas: "botonRestarBB botonNombreBB botonSumarBB";
+}
+
+#textos {
+  display: grid;
+  grid-template-areas: "primerTexto segundoTexto tercerTexto cuartoTexto quintoTexto";
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 1rem;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Imagenes */
+
+.primeraImagen {
+  grid-template-areas: primeraImagen;
+}
+
+.segundaImagen {
+  grid-template-areas: segundaImagen;
+}
+
+.terceraImagen {
+  grid-template-areas: terceraImagen;
+}
+
+.cuartaFoto {
+  grid-template-areas: cuartaFoto;
+}
+
+.quintaFoto {
+  grid-template-areas: quintaFoto;
+}
+
+/* Botones */
+
+/* Dark souls 1 */
+
+.primerBoton {
+  grid-template-areas: primerBoton;
+}
+
+.botonRestarDS1 {
+  grid-template-areas: botonRestarDS1;
+}
+
+.botonSumarDS1 {
+  grid-template-areas: botonSumarDS1;
+}
+
+.botonNombreDS1 {
+  grid-template-areas: botonNombreDS1;
+}
+
+/* Dark souls 2 */
+
+.segundoBoton {
+  grid-template-areas: segundoBoton;
+}
+
+.botonRestarDS2 {
+  grid-template-areas: botonRestarDS2;
+}
+
+.botonNombreDS2 {
+  grid-template-areas: botonNombreDS2;
+}
+
+.botonSumarDS2 {
+  grid-template-areas: botonSumarDS2;
+}
+
+/* Dark souls 3 */
+
+.tercerBoton {
+  grid-template-areas: tercerBoton;
+}
+
+.botonRestarDS3 {
+  grid-template-areas: botonRestarDS3;
+}
+
+.botonNombreDS3 {
+  grid-template-areas: botonNombreDS3;
+}
+
+.botonSumarDS3 {
+  grid-template-areas: botonSumarDS3;
+}
+
+/* Demon's souls */
+
+.cuartoBoton {
+  grid-template-areas: cuartoBoton;
+}
+
+.botonRestarDS {
+  grid-template-areas: botonRestarDS;
+}
+
+.botonNombreDS {
+  grid-template-areas: botonNombreDS;
+}
+
+.botonSumarDS {
+  grid-template-areas: botonSumarDs;
+}
+
+/* Bloodborne */
+
+.quintoBoton {
+  grid-template-areas: quintoBoton;
+}
+
+.botonRestarBB {
+  grid-template-areas: botonRestarBB;
+}
+
+.botonNombreBB {
+  grid-template-areas: botonNombreBB;
+}
+
+.botonSumarBB {
+  grid-template-areas: botonSumarBB;
+}
+
+/* Textos */
+
+.primerTexto {
+  grid-template-areas: primerTexto;
+}
+
+.segundoTexto {
+  grid-template-areas: segundoTexto;
+}
+
+.tercerTexto {
+  grid-template-areas: tercerTexto;
+}
+
+.cuartoTexto {
+  grid-template-areas: cuartoTexto;
+}
+
+.quintoTexto {
+  grid-template-areas: quintoTexto;
+}
+
+.form label {
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 5px;
+  display: flex;
+}
+
+.form input {
+  display: block;
+  border: none;
+  width: 100%;
+  margin-bottom: 0.3rem;
+}
+
+.form input[type="text"] {
+  border: 1px solid #495e8d;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 16px;
+}
+
+.form input[type="submit"] {
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  padding: 0.75rem;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.form input[type="submit"]:hover {
+  background-color: white !important;
+  color: black !important;
+  transition: background-color 500ms ease-in !important;
+  transition: color 500ms ease-in;
+}
+
+.botonFuncion {
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  padding: 0.75rem;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 50%;
+  margin: 0 auto;
+  border-width: 1px;
+  border: 1px solid #d37150;
+}
+
+.botonFuncion:hover {
+  background-color: white !important;
+  color: black !important;
+  border: 0px;
+  transition: background-color 200ms linear !important;
+  transition: color 200ms linear;
+}
+
+form.form:nth-child(2) {
+  padding-bottom: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-left: 0px;
+  }
+
+/* Create */
+.create {
+  min-width: 320px;
+  max-width: 785px;
+  width: 100%;
+  border-radius: 15px;
+  background-color: #0f0f0f;
+  padding: 1rem;
+}
+
+/* Content */
+.content {
+  width: 65%;
+  margin: auto;
+}
+
+h3 {
+  text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #0f0f0f;
+  margin: 15% auto; /* 15% from the top and centered */
+  margin-top: 10%;
+  padding: 20px;
+  width: 70%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#Email {
+  border: 1px solid #495e8d;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 16px;
+  border: 1px solid #d37150;
+}
+
+#plataforma {
+  border: 1px solid #d37150;
+}
+
+#myBtn {
+  font-size: 2rem;
+  }
